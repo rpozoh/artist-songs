@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "type": "object",
+    "properties": {
+        "total_albumes": {
+            "type": "string"
+        },
+        "total_canciones": {
+            "type": "string"
+        },
+        "albumes": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "canciones": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "cancion_id": {
+                        "type": "integer"
+                    },
+                    "nombre_album": {
+                        "type": "string"
+                    },
+                    "nombre_tema": {
+                        "type": "string"
+                    },
+                    "preview_url": {
+                        "type": "string"
+                    },
+                    "fecha_lanzamiento": {
+                        "type": "string"
+                    },
+                    "precio": {
+                        "type": "object",
+                        "properties": {
+                            "valor": {
+                                "type": "string"
+                            },
+                            "moneda": {
+                                "type": "string"
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
