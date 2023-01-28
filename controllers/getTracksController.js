@@ -1,4 +1,5 @@
 const getTracksService = require('../services/getTracksService.js');
+const Functions = require('../utils/functions.js');
 
 const getTracks = async (req, res) => {
     const { name } = req.query;
@@ -15,10 +16,16 @@ const getTracks = async (req, res) => {
 
     try {
         const getTracks = await getTracksService.getArtistTracks({ name });
+        const limitedArtistTracks = getTracks.length > 25 ? functions.limitedArtistTracks(getTracks) : getTracks;
+        const albums = Functions.getTotalAlbum(getTracks);
+        const totalAlbums = albums.length;
+        const songs = Functions.formatSongs(getTracks);
+        console.log(songs);
         res.send({
-            total_albumes: '',
-            total_canciones: getTracks.length,
-            data: getTracks
+            total_albumes: totalAlbums,
+            total_canciones: limitedArtistTracks.length,
+            albumes: albums,
+            canciones: songs
         });
     } catch (error) {
         res.status(error?.status || 500)

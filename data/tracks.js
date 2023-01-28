@@ -6,7 +6,7 @@ const getArtistTracks = (params) => {
         return axios.get(Constants.apiBase + params.name)
         .then(response => {
             const artistTracks = response.data.results.filter(results => {
-                return results.artistName === params.name;
+                return results.artistName.toLowerCase() === params.name.toLowerCase();
             });
             return artistTracks;
         });
