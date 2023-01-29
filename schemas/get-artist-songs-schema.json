@@ -43,11 +43,27 @@
                             "moneda": {
                                 "type": "string"
                             }
-                        }
-
+                        },
+                        "required": [
+                            "valor",
+                            "moneda"
+                        ]
                     }
                 }
-            }
+            },
+            "required": [
+                "cancion_id",
+                "nombre_album",
+                "nombre_tema",
+                "preview_url",
+                "fecha_lanzamiento",
+
+            ]
         }
-    }
+    },
+    "required": [
+        "total_albumes",
+        "total_canciones",
+        "albumes"
+    ]
 }

@@ -15,4 +15,19 @@ const getArtistTracks = (params) => {
     }
 }
 
-module.exports = { getArtistTracks };
+const getArtistTrack = (id) => {
+    try {
+        return axios.get(Constants.apiBase + id)
+        .then(response => {
+            const artistTrack = response.data.results.filter(results => {
+                return results.trackId === id;
+            });
+            return artistTrack;
+        });
+    } catch (error) {
+        throw { status: 500, message: error };
+    }
+}
+
+
+module.exports = { getArtistTracks, getArtistTrack };

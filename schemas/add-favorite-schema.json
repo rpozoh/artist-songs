@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "type": "object",
+    "properties": {
+        "nombre_banda": {
+            "type": "string"
+        },
+        "cancion_id": {
+            "type": "integer"
+        },
+        "usuario": {
+            "type": "string"
+        },
+        "ranking": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "nombre_banda",
+        "cancion_id",
+        "usuario",
+        "ranking"
+    ]
+}

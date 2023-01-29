@@ -1,10 +1,12 @@
 const express = require('express');
 const appRoute = require('./routes/appRoute.js');
 const Constants = require('./utils/Constants.js');
+
 const app = express();
 
 app.use(express.json());
-app.use(Constants.getTracks, appRoute);
+app.use("", appRoute);
+
 
 // LISTEN
 app.listen(Constants.port, () => {
