@@ -5,6 +5,9 @@ const Function = require('../utils/functions.js');
 
 const addFavorite = async (req, res) => {
     console.log("FavoriteController.AddFavorite INI");
+    res.setHeader('Access-Control-Allow-Origin', "*");
+    res.setHeader('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+    res.setHeader('Allow: GET, POST, OPTIONS');
     const { body } = req;
     const validSong = await getTracksService.getTrackById(body);
 

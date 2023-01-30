@@ -15,6 +15,10 @@ class Constants {
     get apiBase() {
         return 'https://itunes.apple.com/search?term=';
     }
+
+    get localhost() {
+        return 'http://localhost:3000';
+    }
 }
 
 module.exports = new Constants(); 

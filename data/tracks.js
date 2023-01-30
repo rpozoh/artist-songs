@@ -23,7 +23,7 @@ const getArtistTrack = (id) => {
                 return results.trackId === id;
             });
             return artistTrack;
-        });
+        })
     } catch (error) {
         throw { status: 500, message: error };
     }

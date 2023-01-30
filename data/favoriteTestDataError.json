@@ -1,0 +1,62 @@
+[
+    {
+        "nombre_banda": "",
+        "cancion_id": 1111578058,
+        "usuario": "Mario",
+        "ranking": "3/5"
+    },
+    {
+        "nombre_banda": 1,
+        "cancion_id": 1111578058,
+        "usuario": "Mario",
+        "ranking": "3/5"
+    },
+    {
+        "nombre_banda": "Radiohead",
+        "cancion_id": 0,
+        "usuario": "Mario",
+        "ranking": "3/5"
+    },
+    {
+        "nombre_banda": "Radiohead",
+        "cancion_id": "a",
+        "usuario": "Mario",
+        "ranking": "3/5"
+    },
+    {
+        "nombre_banda": "Radiohead",
+        "cancion_id": 1111578058,
+        "usuario": "",
+        "ranking": "3/5"
+    },
+    {
+        "nombre_banda": "Radiohead",
+        "cancion_id": 1111578058,
+        "usuario": 2,
+        "ranking": "3/5"
+    },
+    {
+        "nombre_banda": "Radiohead",
+        "cancion_id": 1111578058,
+        "usuario": "Mario",
+        "ranking": ""
+    },
+    {
+        "nombre_banda": "Radiohead",
+        "cancion_id": 1111578058,
+        "usuario": "Mario",
+        "ranking": 3
+    },
+    {
+        "nombre_banda": "Maná",
+        "cancion_id": 1111578058,
+        "usuario": "Mario",
+        "ranking": 3
+    },
+    {
+        "nombre_banda": "Radiohead",
+        "cancion_id": 34,
+        "usuario": "Mario",
+        "ranking": 3
+    }
+]

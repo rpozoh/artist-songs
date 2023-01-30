@@ -3,7 +3,8 @@ const Functions = require('../utils/functions.js');
 
 const getTracks = async (req, res) => {
     console.log("GetTracksController.GetTracks INI");
-    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader('Access-Control-Allow-Origin', "*");
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
     const { name } = req.query;
 
     if(!name) {
